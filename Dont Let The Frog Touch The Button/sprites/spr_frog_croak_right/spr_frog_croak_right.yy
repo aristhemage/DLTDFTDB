@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"Right",
-    "path":"folders/Sprites/Right.yy",
+    "path":"folders/Sprites/Frog/Right.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

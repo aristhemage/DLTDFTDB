@@ -9,4 +9,12 @@ button_timer = irandom_range(button_min,button_max);
 cur_selected = -1;
 
 survive_timer = 60;
-survive_amount = 0;
+cur_score = 0;
+
+seconds_survived = 0;
+
+high_score = 0;
+dead = false;
+
+pos = [irandom_range(100,room_width-100),irandom_range(100,room_height-100)];
+instance_create_depth(pos[0],pos[1],1,obj_button_spawner);

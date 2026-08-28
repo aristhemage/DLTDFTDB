@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"Up Left",
-    "path":"folders/Sprites/Up Left.yy",
+    "path":"folders/Sprites/Frog/Up Left.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
