@@ -1,1 +1,2 @@
 randomize();
+selected = false;

@@ -1,5 +1,5 @@
-make_new_choice = true;
-target = obj_button;
+make_new_choice = false;
+choice_delay = irandom_range(10,30);
 choice = CHOICES.CROAK;
 move_dir = 0;
 
