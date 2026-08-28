@@ -1,8 +1,9 @@
 function Enums(){
 // Frog enums in frog
 
-enum COORDS {
-	X,
-	Y
-}
+	enum GAMESTATES {
+		PLAYING,
+		DEAD,
+		SHOP
+	}
 }

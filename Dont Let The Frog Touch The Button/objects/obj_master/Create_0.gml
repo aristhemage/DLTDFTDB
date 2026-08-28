@@ -14,7 +14,10 @@ cur_score = 0;
 seconds_survived = 0;
 
 high_score = 0;
-dead = false;
+gamestate = GAMESTATES.PLAYING
 
 pos = [irandom_range(100,room_width-100),irandom_range(100,room_height-100)];
 instance_create_depth(pos[0],pos[1],1,obj_button_spawner);
+
+cash = 0;
+

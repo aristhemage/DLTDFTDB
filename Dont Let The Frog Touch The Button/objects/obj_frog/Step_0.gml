@@ -1,4 +1,4 @@
-if(!obj_master.dead){
+if(obj_master.gamestate == GAMESTATES.PLAYING){
 	// Determine nearest button
 	var button = instance_nearest(x,y,obj_button);
 	mask_index = spr_frog_mask;

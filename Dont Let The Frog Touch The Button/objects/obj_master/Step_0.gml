@@ -1,4 +1,4 @@
-if(!dead){
+if(gamestate == GAMESTATES.PLAYING){
 	frog_timer--;
 	if(frog_timer <= 0){
 		frog_timer = irandom_range(frog_min,frog_max);
@@ -21,11 +21,13 @@ if(!dead){
 		cur_score += instance_number(obj_button);
 	}
 }else{
-	if(high_score < cur_score){
-		high_score = cur_score;	
-	}
-	if(!instance_exists(obj_game_over_sign)){
-		instance_create_depth(room_width/2,room_height/2,-999,obj_game_over_sign);	
-	}
+	if(gamestate == GAMESTATES.DEAD){
+		if(high_score < cur_score){
+			high_score = cur_score;	
+		}
+		if(!instance_exists(obj_game_over_sign)){
+			instance_create_depth(room_width/2,room_height/2,-999,obj_game_over_sign);	
+		}
 
+	}
 }

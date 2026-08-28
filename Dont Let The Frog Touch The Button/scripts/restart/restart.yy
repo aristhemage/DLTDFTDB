@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"restart",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"restart",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

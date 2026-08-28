@@ -1,2 +1,2 @@
 draw_self();
-draw_text(x,y-200,show_txt)
+draw_text(x,y-230,show_txt)

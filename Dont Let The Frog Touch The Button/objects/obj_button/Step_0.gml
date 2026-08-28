@@ -1,4 +1,4 @@
-if(!obj_master.dead){
+if(obj_master.gamestate == GAMESTATES.PLAYING){
 	if(mouse_check_button_released(mb_left)){
 		selected = false;
 	}
@@ -13,7 +13,8 @@ if(!obj_master.dead){
 	}
 
 	if(place_meeting(x,y,obj_frog) && !selected){
-		obj_master.dead = true;
+		obj_master.gamestate = GAMESTATES.DEAD;
+		
 	}
 
 	if(selected){

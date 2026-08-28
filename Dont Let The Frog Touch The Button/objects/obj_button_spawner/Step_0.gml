@@ -1,4 +1,4 @@
-if(!obj_master.dead){
+if(obj_master.gamestate == GAMESTATES.PLAYING){
 	var close_frog = instance_nearest(x,y,obj_frog);
 
 	while(distance_to_object(close_frog) < 500){
