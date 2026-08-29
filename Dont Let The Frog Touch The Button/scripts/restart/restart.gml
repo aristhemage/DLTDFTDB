@@ -18,4 +18,9 @@ function restart() {
 		instance_create_depth(pos[0],pos[1],1,obj_button_spawner);
 		instance_create_depth(-99999,-9999,1,obj_frog);	
 	}	
+	
+	instance_destroy(obj_shop);
+	instance_destroy(obj_shop_button);
+	instance_destroy(obj_play_again);
+	instance_destroy(obj_shop_frog);
 }

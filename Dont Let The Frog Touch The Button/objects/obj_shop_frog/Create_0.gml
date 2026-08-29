@@ -20,4 +20,4 @@ txt =
 		"*Hops in*",
 		"*Jumps in*",
 		"Welcome to da shop",
-	) + "\nYou have " + string(obj_master.cash) + " monies"
+	) 

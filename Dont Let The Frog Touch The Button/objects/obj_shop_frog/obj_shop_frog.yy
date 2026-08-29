@@ -10,8 +10,8 @@
   "name":"obj_shop_frog",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Shop",
+    "path":"folders/Objects/Shop.yy",
   },
   "parentObjectId":null,
   "persistent":false,

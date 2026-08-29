@@ -17,7 +17,7 @@ if(obj_master.gamestate == GAMESTATES.PLAYING){
 		
 	}
 
-	if(selected){
+	if(selected && mouse_x > 0 && mouse_x < room_width && mouse_y > 0 && mouse_y < room_height){
 		x = mouse_x;
 		y = mouse_y;
 	}

@@ -21,3 +21,6 @@ instance_create_depth(pos[0],pos[1],1,obj_button_spawner);
 
 cash = 0;
 
+for(var i = 0; i <= SHOP.END_LIST; i++){
+	level[i] = 0;	
+}

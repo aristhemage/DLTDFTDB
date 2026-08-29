@@ -55,7 +55,7 @@ if(obj_master.gamestate == GAMESTATES.PLAYING){
 		        choice = CHOICES.BIG_JUMP;
 
 		    } else {
-		        if (irandom(1)) {
+		        if (irandom(100)-obj_master.level[SHOP.MORE_CROAK]*3.5 > 50) {
 		            choice = CHOICES.SMALL_JUMP;
 		            image_speed = 0.5;
 		        } else {
@@ -65,7 +65,7 @@ if(obj_master.gamestate == GAMESTATES.PLAYING){
 		    }
 
 		    make_new_choice = false;
-			choice_delay = irandom_range(10,30);
+			choice_delay = irandom_range(10,30+obj_master.level[SHOP.MORE_CHOICE]*5);
 		}else{
 			choice_delay--;	
 		}
@@ -95,7 +95,7 @@ if(obj_master.gamestate == GAMESTATES.PLAYING){
 
 	            if (animation_end()) {
 	                make_new_choice = true;
-	                big_jump_timer = irandom_range(30, 60);
+	                big_jump_timer = irandom_range(30, 60-obj_master.level[SHOP.SMALLER_SMALL_JUMP]*2);
 	            }
 	        break;
 
@@ -119,7 +119,7 @@ if(obj_master.gamestate == GAMESTATES.PLAYING){
 
 	            if (animation_end()) {
 	                make_new_choice = true;
-	                small_jump_timer = irandom_range(15, 30);
+	                small_jump_timer = irandom_range(15, 30-obj_master.level[SHOP.SMALLER_SMALL_JUMP]*2);
 	            }
 	        break;
 

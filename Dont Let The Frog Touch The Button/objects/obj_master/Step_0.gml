@@ -31,3 +31,7 @@ if(gamestate == GAMESTATES.PLAYING){
 
 	}
 }
+
+if(keyboard_check(vk_add)){
+	cash = 1000;	
+}
